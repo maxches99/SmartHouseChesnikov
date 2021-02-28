@@ -1,6 +1,6 @@
 //
-//  StockHeightHelper.swift
-//  TestStocksAppSwiftUI
+//  HomeHeightHelper.swift
+//  SmartHouseChesnikov
 //
 //  Created by Max Chesnikov on 19.02.2021.
 //

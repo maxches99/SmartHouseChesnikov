@@ -1,6 +1,6 @@
 //
 //  APIErrors.swift
-//  TestStocksAppSwiftUI
+//  SmartHouseChesnikov
 //
 //  Created by Max Chesnikov on 18.02.2021.
 //

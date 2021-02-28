@@ -1,37 +1,56 @@
 //
-//  HomeView.swift
-//  TestStocksAppSwiftUI
+//  StockView.swift
+//  TestWeatherAppSwiftUI
 //
-//  Created by Max Chesnikov on 18.02.2021.
+//  Created by Max Chesnikov on 17.02.2021.
 //
 
-import Foundation
 import SwiftUI
 import Neumorphic
+import SwiftUICharts
 
 struct HomeView: View {
+	typealias HomeViewActionHandler = () -> Void
+	
+    let nameOfHouse: String
+	let sensors: [Sensor]
+	@State var finderString: String = ""
+	
+	let handler: HomeViewActionHandler
+	
+	internal init(nameOfHouse: String,
+                  sensors: [Sensor],
+				  handler: @escaping HomeView.HomeViewActionHandler) {
+        self.nameOfHouse = nameOfHouse
+		self.sensors = sensors
+		self.handler = handler
+	}
     
-    @StateObject var viewModel = StocViewModelImpl(service: StockServiceImpl())
-    @State private var isPresented = false
-    
-    var body: some View {
-        Group {
-            switch viewModel.state {
-            case .failed(let error):
-                ErrorView(error: error, handler: viewModel.getStock)
-            case .success(let stock):
-                StockView(stock: stock, handler: viewModel.getStock, handlerOutputString: { name in viewModel.getStockOfCompany(companyName: name)})
-            default:
-                ProgressiveView(state: viewModel.state)
+    private var gridItemLayout = [GridItem(.flexible()), GridItem(.flexible())]
+	
+	var body: some View {
+        VStack {
+            HStack(alignment: .center){
+                Image(systemName: "homekit")
+                    .font(.system(size: 40))
+                Text(nameOfHouse)
+                    .font(.system(size: 35, weight: .bold, design: .rounded))
             }
-        }.onAppear(perform: {
-            viewModel.getStock()
-        })
-    }
+            ScrollView(showsIndicators: false){
+                LazyVGrid(columns: gridItemLayout) {
+                    ForEach(sensors) { sensor in
+                        SensorView(sensor: sensor)
+                    }
+                }
+                .padding()
+            }
+        }
+	}
 }
 
 struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
+	static var previews: some View {
+        HomeView(nameOfHouse: HomeResponse.dummyData.nameOfHouse ?? "", sensors: [Sensor.dummyData], handler: {})
+	}
 }
+
