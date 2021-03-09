@@ -10,11 +10,12 @@ import Neumorphic
 
 struct SettingsView: View {
     var body: some View {
-        VStack {
-            HStack {
+        VStack(alignment: .leading) {
+            HStack(alignment: .center) {
                 Text("Настройки")
-                    .font(.system(size: 35, weight: .bold, design: .rounded))
+                    .font(.system(size: 32, weight: .bold, design: .rounded))
                 Spacer()
+                ProfileView()
             }
             .padding()
             HStack {

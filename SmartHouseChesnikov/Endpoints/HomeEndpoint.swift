@@ -15,6 +15,7 @@ protocol APIBuilder {
 
 enum HomeAPI {
     case getData
+    case getProfile
 }
 
 extension HomeAPI: APIBuilder {
@@ -27,12 +28,17 @@ extension HomeAPI: APIBuilder {
     }
     
     var path: String {
-        return "/_get_json"
+        switch self {
+        case .getData:
+            return "/_get_json"
+        case .getProfile:
+            return "/_get_profile"
+        }
     }
     
     var appendingString: String {
         switch self {
-        case .getData:
+        default:
             return ""
         }
     }

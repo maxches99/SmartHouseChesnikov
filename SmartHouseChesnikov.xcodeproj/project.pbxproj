@@ -26,7 +26,19 @@
 		3E8900A925E86554003AEF71 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8900A825E86554003AEF71 /* HomeView.swift */; };
 		3E8900AC25E868F4003AEF71 /* SensorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8900AB25E868F4003AEF71 /* SensorView.swift */; };
 		3E8900B525EA6169003AEF71 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8900B425EA6169003AEF71 /* SettingsView.swift */; };
+		3E8900BB25EC5824003AEF71 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8900BA25EC5824003AEF71 /* ProfileView.swift */; };
+		3EABB12C25F4717D007FCD66 /* SmartHouseChesnikovTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB12B25F4717D007FCD66 /* SmartHouseChesnikovTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EABB12E25F4717D007FCD66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E89004225E5A0DA003AEF71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E89004925E5A0DA003AEF71;
+			remoteInfo = SmartHouseChesnikov;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3E89004A25E5A0DA003AEF71 /* SmartHouseChesnikov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHouseChesnikov.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +60,11 @@
 		3E8900A825E86554003AEF71 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3E8900AB25E868F4003AEF71 /* SensorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorView.swift; sourceTree = "<group>"; };
 		3E8900B425EA6169003AEF71 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3E8900B725EC557A003AEF71 /* SmartHouseChesnikov.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartHouseChesnikov.entitlements; sourceTree = "<group>"; };
+		3E8900BA25EC5824003AEF71 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3EABB12925F4717D007FCD66 /* SmartHouseChesnikovTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHouseChesnikovTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EABB12B25F4717D007FCD66 /* SmartHouseChesnikovTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHouseChesnikovTests.swift; sourceTree = "<group>"; };
+		3EABB12D25F4717D007FCD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +77,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3EABB12625F4717D007FCD66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				3E89004C25E5A0DA003AEF71 /* SmartHouseChesnikov */,
+				3EABB12A25F4717D007FCD66 /* SmartHouseChesnikovTests */,
 				3E89004B25E5A0DA003AEF71 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				3E89004A25E5A0DA003AEF71 /* SmartHouseChesnikov.app */,
+				3EABB12925F4717D007FCD66 /* SmartHouseChesnikovTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +108,7 @@
 		3E89004C25E5A0DA003AEF71 /* SmartHouseChesnikov */ = {
 			isa = PBXGroup;
 			children = (
+				3E8900B725EC557A003AEF71 /* SmartHouseChesnikov.entitlements */,
 				3E89007D25E5A1DB003AEF71 /* Endpoints */,
 				3E89007B25E5A1DB003AEF71 /* Errors */,
 				3E89008525E5A1DB003AEF71 /* Helpers */,
@@ -172,8 +199,18 @@
 				3E8900A825E86554003AEF71 /* HomeView.swift */,
 				3E8900AB25E868F4003AEF71 /* SensorView.swift */,
 				3E8900B425EA6169003AEF71 /* SettingsView.swift */,
+				3E8900BA25EC5824003AEF71 /* ProfileView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3EABB12A25F4717D007FCD66 /* SmartHouseChesnikovTests */ = {
+			isa = PBXGroup;
+			children = (
+				3EABB12B25F4717D007FCD66 /* SmartHouseChesnikovTests.swift */,
+				3EABB12D25F4717D007FCD66 /* Info.plist */,
+			);
+			path = SmartHouseChesnikovTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +237,24 @@
 			productReference = 3E89004A25E5A0DA003AEF71 /* SmartHouseChesnikov.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3EABB12825F4717D007FCD66 /* SmartHouseChesnikovTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EABB13225F4717D007FCD66 /* Build configuration list for PBXNativeTarget "SmartHouseChesnikovTests" */;
+			buildPhases = (
+				3EABB12525F4717D007FCD66 /* Sources */,
+				3EABB12625F4717D007FCD66 /* Frameworks */,
+				3EABB12725F4717D007FCD66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EABB12F25F4717D007FCD66 /* PBXTargetDependency */,
+			);
+			name = SmartHouseChesnikovTests;
+			productName = SmartHouseChesnikovTests;
+			productReference = 3EABB12925F4717D007FCD66 /* SmartHouseChesnikovTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,6 +266,10 @@
 				TargetAttributes = {
 					3E89004925E5A0DA003AEF71 = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					3EABB12825F4717D007FCD66 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 3E89004925E5A0DA003AEF71;
 					};
 				};
 			};
@@ -232,6 +291,7 @@
 			projectRoot = "";
 			targets = (
 				3E89004925E5A0DA003AEF71 /* SmartHouseChesnikov */,
+				3EABB12825F4717D007FCD66 /* SmartHouseChesnikovTests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +303,13 @@
 			files = (
 				3E89005525E5A0DD003AEF71 /* Preview Assets.xcassets in Resources */,
 				3E89005225E5A0DD003AEF71 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EABB12725F4717D007FCD66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +328,7 @@
 				3E89009125E5A1DB003AEF71 /* HomeModel.swift in Sources */,
 				3E89009325E5A1DB003AEF71 /* HomeService.swift in Sources */,
 				3E89009725E5A1DB003AEF71 /* ProgressiveView.swift in Sources */,
+				3E8900BB25EC5824003AEF71 /* ProfileView.swift in Sources */,
 				3E89004E25E5A0DA003AEF71 /* SmartHouseChesnikovApp.swift in Sources */,
 				3E8900AC25E868F4003AEF71 /* SensorView.swift in Sources */,
 				3E89008F25E5A1DB003AEF71 /* APIErrors.swift in Sources */,
@@ -271,7 +339,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3EABB12525F4717D007FCD66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EABB12C25F4717D007FCD66 /* SmartHouseChesnikovTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EABB12F25F4717D007FCD66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E89004925E5A0DA003AEF71 /* SmartHouseChesnikov */;
+			targetProxy = 3EABB12E25F4717D007FCD66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3E89005725E5A0DD003AEF71 /* Debug */ = {
@@ -395,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartHouseChesnikov/SmartHouseChesnikov.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartHouseChesnikov/Preview Content\"";
 				DEVELOPMENT_TEAM = 274RF4F6D5;
@@ -407,8 +492,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxches.SmartHouseChesnikov;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -417,6 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartHouseChesnikov/SmartHouseChesnikov.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartHouseChesnikov/Preview Content\"";
 				DEVELOPMENT_TEAM = 274RF4F6D5;
@@ -429,8 +516,49 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxches.SmartHouseChesnikov;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
+		3EABB13025F4717D007FCD66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 274RF4F6D5;
+				INFOPLIST_FILE = SmartHouseChesnikovTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxches.SmartHouseChesnikovTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartHouseChesnikov.app/SmartHouseChesnikov";
+			};
+			name = Debug;
+		};
+		3EABB13125F4717D007FCD66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 274RF4F6D5;
+				INFOPLIST_FILE = SmartHouseChesnikovTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxches.SmartHouseChesnikovTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartHouseChesnikov.app/SmartHouseChesnikov";
 			};
 			name = Release;
 		};
@@ -451,6 +579,15 @@
 			buildConfigurations = (
 				3E89005A25E5A0DD003AEF71 /* Debug */,
 				3E89005B25E5A0DD003AEF71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EABB13225F4717D007FCD66 /* Build configuration list for PBXNativeTarget "SmartHouseChesnikovTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EABB13025F4717D007FCD66 /* Debug */,
+				3EABB13125F4717D007FCD66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
