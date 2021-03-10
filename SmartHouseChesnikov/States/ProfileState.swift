@@ -1,21 +1,21 @@
 //
-//  ResultState.swift
+//  ProfileState.swift
 //  SmartHouseChesnikov
 //
-//  Created by Max Chesnikov on 18.02.2021.
+//  Created by Max Chesnikov on 10.03.2021.
 //
 
 import Foundation
 
-enum ResultState {
+enum ProfileState {
     case loading
-    case success(content: [Sensor])
+    case success(content: ProfileResponse)
     case failed(error: Error)
     
     var title: String {
         switch self {
         case .loading:
-            return "Идет поиск вашего дома"
+            return "Идет поиск вашего профиля"
         case .success(_):
             return "Дом загружен, а ты все еще с нами"
         case .failed(_):

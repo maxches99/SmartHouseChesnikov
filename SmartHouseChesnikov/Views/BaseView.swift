@@ -16,8 +16,8 @@ struct BaseView: View {
     
     var body: some View {
         Group {
-            switch viewModel.state {
-            case .failed(let error):
+                    switch viewModel.state {
+                    case .failed(let error):
                 ErrorView(error: error, handler: viewModel.getHome)
             case .success(let sensors):
                 TabView {

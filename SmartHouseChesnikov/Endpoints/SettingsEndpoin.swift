@@ -1,28 +1,25 @@
 //
-//  HomeEndpoint.swift
+//  SettingsAPI.swift
 //  SmartHouseChesnikov
 //
-//  Created by Max Chesnikov on 18.02.2021.
+//  Created by Max Chesnikov on 10.03.2021.
 //
 
 import Foundation
 
-enum HomeAPI {
-    case getData
-    case getProfile
+enum SettingsAPI {
+    case getSettings
 }
 
-extension HomeAPI: APIBuilder {
+extension SettingsAPI: APIBuilder {
     var urlRequest: URLRequest {
         return URLRequest(url: URL( string: baseUrl.appendingPathComponent(path).absoluteString.removingPercentEncoding! + appendingString)!)
     }
     
     var path: String {
         switch self {
-        case .getData:
-            return "/_get_json"
-        case .getProfile:
-            return "/_get_profile"
+        case .getSettings:
+            return "/_get_settings"
         }
     }
     
@@ -33,4 +30,3 @@ extension HomeAPI: APIBuilder {
         }
     }
 }
-

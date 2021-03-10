@@ -1,26 +1,23 @@
 //
-//  HomeEndpoint.swift
+//  ProfileAPI.swift
 //  SmartHouseChesnikov
 //
-//  Created by Max Chesnikov on 18.02.2021.
+//  Created by Max Chesnikov on 10.03.2021.
 //
 
 import Foundation
 
-enum HomeAPI {
-    case getData
+enum ProfileAPI {
     case getProfile
 }
 
-extension HomeAPI: APIBuilder {
+extension ProfileAPI: APIBuilder {
     var urlRequest: URLRequest {
         return URLRequest(url: URL( string: baseUrl.appendingPathComponent(path).absoluteString.removingPercentEncoding! + appendingString)!)
     }
     
     var path: String {
         switch self {
-        case .getData:
-            return "/_get_json"
         case .getProfile:
             return "/_get_profile"
         }

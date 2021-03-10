@@ -28,6 +28,23 @@
 		3E8900B525EA6169003AEF71 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8900B425EA6169003AEF71 /* SettingsView.swift */; };
 		3E8900BB25EC5824003AEF71 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8900BA25EC5824003AEF71 /* ProfileView.swift */; };
 		3EABB12C25F4717D007FCD66 /* SmartHouseChesnikovTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB12B25F4717D007FCD66 /* SmartHouseChesnikovTests.swift */; };
+		3EABB13725F8621A007FCD66 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB13625F8621A007FCD66 /* UIImage.swift */; };
+		3EABB13B25F8625B007FCD66 /* QRHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB13A25F8625B007FCD66 /* QRHelper.swift */; };
+		3EABB13F25F865E6007FCD66 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB13E25F865E6007FCD66 /* SettingsService.swift */; };
+		3EABB14325F86624007FCD66 /* SettingsEndpoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB14225F86624007FCD66 /* SettingsEndpoin.swift */; };
+		3EABB14725F86642007FCD66 /* ProfileEndpoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB14625F86642007FCD66 /* ProfileEndpoin.swift */; };
+		3EABB14C25F8670E007FCD66 /* APIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB14B25F8670E007FCD66 /* APIBuilder.swift */; };
+		3EABB15225F8673A007FCD66 /* SensorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB15125F8673A007FCD66 /* SensorModel.swift */; };
+		3EABB15625F86753007FCD66 /* SensorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB15525F86753007FCD66 /* SensorType.swift */; };
+		3EABB15A25F86764007FCD66 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB15925F86764007FCD66 /* SettingsModel.swift */; };
+		3EABB15E25F8676D007FCD66 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB15D25F8676D007FCD66 /* ProfileModel.swift */; };
+		3EABB16225F86C35007FCD66 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB16125F86C35007FCD66 /* SettingsViewModel.swift */; };
+		3EABB16625F86D75007FCD66 /* SettingsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB16525F86D75007FCD66 /* SettingsState.swift */; };
+		3EABB16A25F86F15007FCD66 /* ProgressiveSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB16925F86F15007FCD66 /* ProgressiveSettingsView.swift */; };
+		3EABB17025F872D6007FCD66 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB16F25F872D6007FCD66 /* ProfileService.swift */; };
+		3EABB17525F897F5007FCD66 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3EABB17425F897F5007FCD66 /* URLImage */; };
+		3EABB17925F89B16007FCD66 /* ProfileState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB17825F89B16007FCD66 /* ProfileState.swift */; };
+		3EABB17D25F89BF1007FCD66 /* ProgressiveProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABB17C25F89BF1007FCD66 /* ProgressiveProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +82,22 @@
 		3EABB12925F4717D007FCD66 /* SmartHouseChesnikovTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHouseChesnikovTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EABB12B25F4717D007FCD66 /* SmartHouseChesnikovTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHouseChesnikovTests.swift; sourceTree = "<group>"; };
 		3EABB12D25F4717D007FCD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EABB13625F8621A007FCD66 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		3EABB13A25F8625B007FCD66 /* QRHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRHelper.swift; sourceTree = "<group>"; };
+		3EABB13E25F865E6007FCD66 /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
+		3EABB14225F86624007FCD66 /* SettingsEndpoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEndpoin.swift; sourceTree = "<group>"; };
+		3EABB14625F86642007FCD66 /* ProfileEndpoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEndpoin.swift; sourceTree = "<group>"; };
+		3EABB14B25F8670E007FCD66 /* APIBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBuilder.swift; sourceTree = "<group>"; };
+		3EABB15125F8673A007FCD66 /* SensorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorModel.swift; sourceTree = "<group>"; };
+		3EABB15525F86753007FCD66 /* SensorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorType.swift; sourceTree = "<group>"; };
+		3EABB15925F86764007FCD66 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		3EABB15D25F8676D007FCD66 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		3EABB16125F86C35007FCD66 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		3EABB16525F86D75007FCD66 /* SettingsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsState.swift; sourceTree = "<group>"; };
+		3EABB16925F86F15007FCD66 /* ProgressiveSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressiveSettingsView.swift; sourceTree = "<group>"; };
+		3EABB16F25F872D6007FCD66 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		3EABB17825F89B16007FCD66 /* ProfileState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileState.swift; sourceTree = "<group>"; };
+		3EABB17C25F89BF1007FCD66 /* ProgressiveProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressiveProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E89009E25E5A220003AEF71 /* Neumorphic in Frameworks */,
+				3EABB17525F897F5007FCD66 /* URLImage in Frameworks */,
 				3E8900A225E5A244003AEF71 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				3E8900B725EC557A003AEF71 /* SmartHouseChesnikov.entitlements */,
+				3EABB14A25F866F3007FCD66 /* Builders */,
+				3EABB13525F86208007FCD66 /* Extensions */,
 				3E89007D25E5A1DB003AEF71 /* Endpoints */,
 				3E89007B25E5A1DB003AEF71 /* Errors */,
 				3E89008525E5A1DB003AEF71 /* Helpers */,
@@ -146,6 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				3E89007E25E5A1DB003AEF71 /* HomeEndpoint.swift */,
+				3EABB14225F86624007FCD66 /* SettingsEndpoin.swift */,
+				3EABB14625F86642007FCD66 /* ProfileEndpoin.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -154,6 +192,10 @@
 			isa = PBXGroup;
 			children = (
 				3E89008025E5A1DB003AEF71 /* HomeModel.swift */,
+				3EABB15125F8673A007FCD66 /* SensorModel.swift */,
+				3EABB15525F86753007FCD66 /* SensorType.swift */,
+				3EABB15925F86764007FCD66 /* SettingsModel.swift */,
+				3EABB15D25F8676D007FCD66 /* ProfileModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				3E89008225E5A1DB003AEF71 /* HomeViewModel.swift */,
+				3EABB16125F86C35007FCD66 /* SettingsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -170,6 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				3E89008425E5A1DB003AEF71 /* HomeService.swift */,
+				3EABB13E25F865E6007FCD66 /* SettingsService.swift */,
+				3EABB16F25F872D6007FCD66 /* ProfileService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -178,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				3E89008625E5A1DB003AEF71 /* HomeHeightHelper.swift */,
+				3EABB13A25F8625B007FCD66 /* QRHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -186,6 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				3E89008825E5A1DB003AEF71 /* ResultState.swift */,
+				3EABB16525F86D75007FCD66 /* SettingsState.swift */,
+				3EABB17825F89B16007FCD66 /* ProfileState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -195,6 +243,8 @@
 			children = (
 				3E89008A25E5A1DB003AEF71 /* BaseView.swift */,
 				3E89008B25E5A1DB003AEF71 /* ProgressiveView.swift */,
+				3EABB16925F86F15007FCD66 /* ProgressiveSettingsView.swift */,
+				3EABB17C25F89BF1007FCD66 /* ProgressiveProfileView.swift */,
 				3E89008E25E5A1DB003AEF71 /* ErrorView.swift */,
 				3E8900A825E86554003AEF71 /* HomeView.swift */,
 				3E8900AB25E868F4003AEF71 /* SensorView.swift */,
@@ -211,6 +261,22 @@
 				3EABB12D25F4717D007FCD66 /* Info.plist */,
 			);
 			path = SmartHouseChesnikovTests;
+			sourceTree = "<group>";
+		};
+		3EABB13525F86208007FCD66 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3EABB13625F8621A007FCD66 /* UIImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3EABB14A25F866F3007FCD66 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				3EABB14B25F8670E007FCD66 /* APIBuilder.swift */,
+			);
+			path = Builders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +298,7 @@
 			packageProductDependencies = (
 				3E89009D25E5A220003AEF71 /* Neumorphic */,
 				3E8900A125E5A244003AEF71 /* SwiftUICharts */,
+				3EABB17425F897F5007FCD66 /* URLImage */,
 			);
 			productName = SmartHouseChesnikov;
 			productReference = 3E89004A25E5A0DA003AEF71 /* SmartHouseChesnikov.app */;
@@ -285,6 +352,7 @@
 			packageReferences = (
 				3E89009C25E5A220003AEF71 /* XCRemoteSwiftPackageReference "neumorphic" */,
 				3E8900A025E5A244003AEF71 /* XCRemoteSwiftPackageReference "ChartView" */,
+				3EABB17325F897F5007FCD66 /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = 3E89004B25E5A0DA003AEF71 /* Products */;
 			projectDirPath = "";
@@ -323,19 +391,35 @@
 				3E8900B525EA6169003AEF71 /* SettingsView.swift in Sources */,
 				3E89005025E5A0DA003AEF71 /* ContentView.swift in Sources */,
 				3E89009225E5A1DB003AEF71 /* HomeViewModel.swift in Sources */,
+				3EABB17925F89B16007FCD66 /* ProfileState.swift in Sources */,
+				3EABB14325F86624007FCD66 /* SettingsEndpoin.swift in Sources */,
 				3E89009525E5A1DB003AEF71 /* ResultState.swift in Sources */,
+				3EABB14725F86642007FCD66 /* ProfileEndpoin.swift in Sources */,
+				3EABB15A25F86764007FCD66 /* SettingsModel.swift in Sources */,
 				3E89009625E5A1DB003AEF71 /* BaseView.swift in Sources */,
+				3EABB16625F86D75007FCD66 /* SettingsState.swift in Sources */,
 				3E89009125E5A1DB003AEF71 /* HomeModel.swift in Sources */,
+				3EABB13B25F8625B007FCD66 /* QRHelper.swift in Sources */,
+				3EABB13725F8621A007FCD66 /* UIImage.swift in Sources */,
 				3E89009325E5A1DB003AEF71 /* HomeService.swift in Sources */,
 				3E89009725E5A1DB003AEF71 /* ProgressiveView.swift in Sources */,
+				3EABB15E25F8676D007FCD66 /* ProfileModel.swift in Sources */,
+				3EABB15225F8673A007FCD66 /* SensorModel.swift in Sources */,
 				3E8900BB25EC5824003AEF71 /* ProfileView.swift in Sources */,
 				3E89004E25E5A0DA003AEF71 /* SmartHouseChesnikovApp.swift in Sources */,
+				3EABB15625F86753007FCD66 /* SensorType.swift in Sources */,
 				3E8900AC25E868F4003AEF71 /* SensorView.swift in Sources */,
 				3E89008F25E5A1DB003AEF71 /* APIErrors.swift in Sources */,
 				3E89009025E5A1DB003AEF71 /* HomeEndpoint.swift in Sources */,
 				3E89009A25E5A1DB003AEF71 /* ErrorView.swift in Sources */,
 				3E89009425E5A1DB003AEF71 /* HomeHeightHelper.swift in Sources */,
 				3E8900A925E86554003AEF71 /* HomeView.swift in Sources */,
+				3EABB16A25F86F15007FCD66 /* ProgressiveSettingsView.swift in Sources */,
+				3EABB14C25F8670E007FCD66 /* APIBuilder.swift in Sources */,
+				3EABB17D25F89BF1007FCD66 /* ProgressiveProfileView.swift in Sources */,
+				3EABB13F25F865E6007FCD66 /* SettingsService.swift in Sources */,
+				3EABB16225F86C35007FCD66 /* SettingsViewModel.swift in Sources */,
+				3EABB17025F872D6007FCD66 /* ProfileService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +695,14 @@
 				minimumVersion = 1.5.4;
 			};
 		};
+		3EABB17325F897F5007FCD66 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -623,6 +715,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3E8900A025E5A244003AEF71 /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
+		};
+		3EABB17425F897F5007FCD66 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3EABB17325F897F5007FCD66 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

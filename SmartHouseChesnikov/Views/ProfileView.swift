@@ -7,16 +7,24 @@
 
 import SwiftUI
 import Neumorphic
+import URLImage
 
 struct ProfileView: View {
+    
+    @State var profile: ProfileResponse
+    
     var body: some View {
         HStack(alignment: .center) {
-            Text("Max Chesnikov")
+            Text(profile.name ?? "")
                 .font(.system(size: 14, weight: .medium, design: .rounded))
-            Image("photo")
-                .resizable()
-                .frame(width: 20, height: 20)
-                .cornerRadius(7)
+            if let url = URL(string: profile.imgUrl ?? "") {
+                URLImage(url: url) { image in
+                    image
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .cornerRadius(7)
+                }
+            }
         }
         .padding()
         .background(
@@ -28,6 +36,6 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(profile: ProfileResponse.dummyData)
     }
 }
