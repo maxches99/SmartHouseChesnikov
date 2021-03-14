@@ -15,9 +15,9 @@ enum SettingsState {
     var title: String {
         switch self {
         case .loading:
-            return "Идет поиск вашего дома"
+            return "Идет поиск ваших настроек"
         case .success(_):
-            return "Дом загружен, а ты все еще с нами"
+            return "Настройки загружены, а ты все еще с нами"
         case .failed(_):
             return "Сервак работает, но что-то пошло не так"
         }

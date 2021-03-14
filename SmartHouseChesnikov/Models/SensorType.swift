@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Тип сенсора
 enum SensorType{
     case temp
     case smoke

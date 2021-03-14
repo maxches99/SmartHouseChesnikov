@@ -22,7 +22,6 @@ struct HomeServiceImpl: HomeService {
             .receive(on: DispatchQueue.main)
             .mapError { _ in APIError.unknown }
             .flatMap { data, response -> AnyPublisher<HomeResponse, APIError> in
-                
                 guard let response = response as? HTTPURLResponse else {
                     return Fail(error: APIError.unknown).eraseToAnyPublisher()
                 }

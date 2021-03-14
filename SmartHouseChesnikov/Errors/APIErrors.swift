@@ -17,11 +17,11 @@ extension APIError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .decodingError:
-            return "Мы не смогли понять какую хуйню вернул сервак"
+            return "Мы не смогли понять что вернул сервак"
         case .errorCode(let code):
-            return "Код - \(code) - хуевый"
+            return "Код ошибки - \(code), вы не виноваты"
         case .unknown:
-            return "Биржа - хуиржа"
+            return "Мы не знаем, что произошло"
         }
     }
 }
